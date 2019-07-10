@@ -15,13 +15,13 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/new", function(req, res) {
+router.post("/api/burgers", function(req, res) {
   burger.create(
     ["burger_name"],
-    [req.body.burger],
+    [req.body.burger_name],
     function(result){
         console.log(result);
-        res.json({id: result.insertID,burger_name:result.insertBurger_name});
+        res.json({id: result.insertId});
     });
 });
 

@@ -102,7 +102,7 @@ li {
     height: 100%;
     width: 100%;
     background: linear-gradient(rgba(26, 25, 25, 0.801), rgba(26, 25, 25, 0.801)),
-      url("/public/assets/img/burger.jpg") no-repeat center center fixed;
+      url("../img/burger.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
