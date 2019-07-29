@@ -2,7 +2,7 @@
 
 	<div class="row">
 		<div class="center col-sm-12">
-			<h1>Eat-Da-Street-Burger App</h1>
+			<h1>Eat-Yo-Burger App</h1>
 			<p></p>
 		</div>
 	</div>
@@ -20,7 +20,7 @@
 					<span class="burgerName"><strong>{{this.id}} - {{this.burger_name}} </strong></span>
 					<form class="form-inline" id="formID" action="/{{this.id}}?_method=PUT" method="POST">
 						<input type="hidden" name="devoured" value="true">
-						<button class="devourburger btn" type="submit">Destroy It</button>
+						<button class="devourburger btn" data-id="{{id}}">Destroy It</button>
 					</form>
 				</li>
 
@@ -51,9 +51,9 @@
 			<form class="create-update-form" action="/" method="POST">
 				<div class="form-group">
 					<p class="instructions">Enter a burger you want to order and click the Submit Order button.</p>
-					<input type="search" id="ca" name="burger_name" placeholder="Your order...">
+					<input type="search" id="name" name="burger_name" placeholder="Your order...">
 				</div>
-				<button class="submitburger btn" type="submit">Submit Order</button>
+				<button class="submitburger btn">Submit Order</button>
 			</form>
 		</div>
 	</div>
